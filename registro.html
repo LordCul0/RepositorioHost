@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://kit.fontawesome.com/cea33d77ef.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/cssregistro.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario registro</title>
+</head>
+
+<body>
+  <header>
+    <div class="image-header">
+      <a href="index.html"><img src="img/logo.png" alt=""></a>
+    </div>
+    <div class="div-registro">
+      <ul>
+        <li><a href="index.html"><i class="fa-solid fa-house-user"></i> Home</a></li>
+        <li><a href="somos2.html"><i class="fa-solid fa-user"></i> Somos </a></li>
+        <li><a href="productos.html"><i class="fa-solid fa-envelope"></i> Productos </a></li>
+      </ul>
+    </div>
+  </header>
+
+
+  <!-- <header>
+    <div class="divregistro">
+      <ul>
+        <a href="index.html">
+          <li> Index </li>
+        </a>
+        <a href="tablasGeneral.html">
+          <li> Tablas</li>
+        </a>
+        <a href="formulariosGeneral.html">
+          <li> Formularios</li>
+        </a>
+      </ul>
+    </div>
+  </header> -->
+  <h2> REGISTRO VEHICULOS</h2>
+  <div class="algo">
+    <form action="" method="get">
+      <fieldset>
+        <legend> Datos del propietario</legend>
+
+
+        <label for="nombre"> Nombre Titular</label>
+        <input type="text" name="nombre" id="nomtitular" maxlength="30">
+        <br>
+        <label for="apellido"> Apellido Titular</label>
+        <input type="text" name="apellido" id="apeTitular" maxlength="30">
+        <br>
+        <label for="tel"> Tel.Contacto</label>
+        <input type="text" name="tel" id="tel" pattern="[0-9]{9}" required>
+        <br>
+      </fieldset>
+
+      <fieldset>
+        <legend> Datos del vehiculo</legend>
+        <label for="marca"> Marca</label>
+        <input type="text" name="marca" id="marca_auto" maxlength="12">
+        <br>
+        <label for="modelo"> Modelo</label>
+        <input type="text" name="modelo" id="modelo_auto" maxlength="12">
+        <br>
+        <label for="año"> Año</label>
+        <input type="text" name="año" id="año_auto">
+        <br>
+        <label for="color"> Color</label>
+        <select name="Color">
+          <option>Blanco</option>
+          <option> Negro</option>
+          <option>Azul</option>
+          <option> Rojo</option>
+          <option>Gris</option>
+        </select>
+        <br>
+
+        <label for="matricula"> Matricula</label>
+        <input type="text" name="matricula" id="matricula_auto" pattern="[A-Z]{3}[0-9]{4}">
+        <br>
+        <label for="ciudad"> Ciudad</label>
+        <select name="ciudad">
+          <option>Montevideo</option>
+          <option> Salto</option>
+          <option>Ciudad de la costa</option>
+          <option> Maldonado</option>
+        </select>
+        <br>
+        <label for="fecha"> Fecha de empadronamiento</label>
+        <input type="date" name="fecha" id="fecha_auto">
+      </fieldset>
+      <input type="submit" value="enviar" id="botonenviar">
+      <input type="reset" value="Borrar" id="botonborrar">
+    </form>
+  </div>
+  <footer>
+    <a href="https://twitter.com/"><i class="fa-brands fa-twitter fa-bounce"></i></a>
+    <a href="https://instagram.com/"><i class="fa-brands fa-square-instagram fa-bounce"></i></a>
+    <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok fa-bounce"></i></a>
+
+  </footer>
+</body>
+
+</html>

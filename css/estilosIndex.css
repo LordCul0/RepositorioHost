@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+body {
+  font-family: Oswald, 'sans-serif';
+  display: flex;
+  flex-direction: column;
+
+
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #E8EAF6;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+
+}
+
+/*
+header {
+  padding: 1rem;
+  font-family: Oswald, 'sans-serif';
+  width: 100%;
+  background-color: #f1f1f1;
+  font-weight: 700;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  align-items: baseline;
+}
+
+header .image-header {
+  padding: 0 1rem;
+}
+
+header .image-header img {
+  width: 50%;
+  padding: 10%;
+}
+
+header li {
+  list-style: none;
+}
+
+header ul li {
+  margin: 0 1rem;
+}
+
+header ul li a {
+  font-size: 1.4rem;
+  color: rgb(54, 182, 199);
+  margin: 0 20px;
+  transition: all .3s;
+}
+
+header ul li a:hover {
+  color: rgb(28, 98, 107);
+}
+
+
+
+input {
+  border-radius: 3rem;
+}
+
+label {
+  display: block;
+
+}
+
+li {
+  list-style-type: none;
+  padding-right: 5%
+}
+
+.listHeader {
+  display: flex;
+  align-items: center;
+}
+
+.listHeader li {
+  margin: 0px 30px 0 30px;
+  font-size: 20px;
+}
+*/
+a {
+  text-decoration: none;
+  color: black;
+
+
+}
+
+
+.total {
+  padding: 1rem;
+  margin: 1rem;
+  height: 100%;
+  width: 33.3%;
+  flex-direction: column;
+
+}
+
+.otros {
+  padding: 1rem;
+  margin: 1rem;
+  height: 100%;
+  width: 33.3%;
+  flex-direction: column;
+
+}
+
+.tablas {
+  font-size: 75px;
+}
+
+.totaltotal {
+  height: 100%;
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+
+}
+
+.tablas1 {
+  font-size: 50px;
+  padding-left: 2rem;
+  margin-left: 1rem;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+
+
+.folder {
+  font-size: 75px;
+
+
+
+}
+
+.forms {
+  font-size: 50px;
+  padding-left: 2rem;
+  margin-left: 1rem;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 15px 0;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: Oswald, 'sans-serif';
+  color: black;
+}
+
+.cajas {
+  font-size: 50px;
+  padding-left: 2rem;
+  margin-left: 1rem;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+h3 {
+  font-size: 25px;
+  font-family: Oswald, 'sans-serif';
+  color: black;
+  display: inline-block;
+}
+
+.formtit {
+  font-size: 75px;
+}
+
+.formulariostotal {
+  padding: 1rem;
+  margin: 1rem;
+  height: 100%;
+  width: 33.3%;
+  flex-direction: column;
+}
+
+@media screen and (max-width:550px) {
+  .totaltotal {
+    flex-wrap: wrap;
+  }
+}

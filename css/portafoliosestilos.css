@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+:root {
+  --main-color: #F5F5F5;
+  --secund-color: #958b8b;
+  --third-color: #5f4633;
+  --fourth-color: #e3d7bf;
+  --fifth-color: #745945;
+  --sixth-color: #c7b69f;
+  --back-main-color: #fff9e1;
+  --main-color-background: #FFFAFA;
+  --secund-color-background: #1a191f;
+  --third-color-background: #251b1b;
+}
+
+body {
+  width: 100vw;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* styles header */
+
+header {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  box-sizing: border-box;
+  background-color: var(--secund-color-background)
+}
+
+.container__logo {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4vw;
+
+}
+
+.logo {
+  height: 100%;
+  object-fit: cover;
+}
+
+nav {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+
+}
+
+nav ul li {
+
+  display: inline-block;
+  margin-left: 1rem;
+  width: auto;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--sixth-color);
+}
+
+nav ul li a:hover {
+  color: var(--main-color-background);
+  transition: all .3s ease-in;
+}
+
+
+
+
+/* fin styles header */
+
+/* styles presentacion */
+.section_presentacion {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--third-color-background);
+}
+
+.container_card_presentacion {
+
+  width: 100vw;
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  place-items: center;
+  padding-top: 5rem;
+  flex-wrap: wrap;
+  position: relative;
+  bottom: .4rem;
+
+
+
+}
+
+.card_presentacion {
+  border-radius: 2rem 0 2rem 0;
+  width: 15rem;
+  min-width: 15rem;
+  min-height: 20rem;
+  height: 20rem;
+  background-color: var(--fourth-color);
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  z-index: 90;
+
+
+}
+
+.container_card_image {
+  width: 70%;
+  height: 50%;
+  overflow: hidden;
+  border-radius: 100%;
+  border: 2px solid var(--third-color);
+  z-index: 10;
+
+}
+
+.image_card {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.card_texto {
+  height: 20%;
+  width: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: "Anto";
+  font-weight: 400;
+  color: var(--main-color);
+  position: relative;
+  z-index: 30;
+}
+
+.boton_card {
+  height: 25%;
+  width: 100%;
+  background-color: var();
+  display: flex;
+  place-items: center;
+  text-align: center;
+  place-content: center;
+
+}
+
+.view_page {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: var(--main-color-background);
+  background-color: #251b1b;
+  padding: .4rem 1.6rem;
+  border-radius: 10px;
+}
+
+.view_page:hover {
+
+  background-color: transparent;
+  color: var(--secund-color-background);
+  transition: .5s .1s ease-out;
+
+}
+
+.card_presentacion::before {
+  position: absolute;
+  z-index: 8;
+  content: "";
+  width: 100%;
+  height: 47%;
+  background-color: var(--third-color);
+
+}
+
+.title_presentacion {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  position: absolute;
+  z-index: 5;
+  color: var(--main-color);
+  font-family: "Anton";
+}
+
+/* fin styles section presentacion */
+
+
+
+.section__formulario {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: var(--secund-color);
+}
+
+.contenedor__formulario {
+  width: 90%;
+  height: 77%;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  width: 40%;
+  background-color: var(--fifth-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 90%;
+  gap: 10%;
+  border-radius: 3rem;
+  position: relative;
+  top: 1rem;
+}
+
+.form_group {
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 10%;
+
+}
+
+.input_form {
+  width: 90%;
+  padding: 1.4rem 1rem;
+  border-radius: 60px;
+  border: .1px solid var(--secund-color-background);
+  background-color: var(--back-main-color);
+}
+
+.form_boton {
+  width: 100%;
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 2.5rem;
+}
+
+.boton__form {
+  padding: 1rem 3rem;
+  background-color: var(--third-color-background);
+  font-size: 1.4rem;
+  color: var(--main-color);
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.boton__form:hover {
+  transform: scale(1.2);
+  transition: .5s ease-out;
+  color: var(--secund-color-background);
+  background-color: var(--sixth-color);
+
+}
+
+.title_formulario {
+  color: var(--back-main-color);
+  font-size: 2rem;
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: none;
+}
+
+/* fin styles formulario */
+
+/* styles footer */
+
+footer {
+  width: 100%;
+  height: 30%;
+  background-color: #1a191f;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container_icon_logo {}
+
+footer .icon {
+  color: var(--main-color-background);
+  margin: 2rem;
+  font-size: 3rem;
+}
+
+footer .icon:hover {
+  transform: scale(1.1);
+  opacity: 50%;
+  transition: .5s all ease-in-out;
+}
+
+footer .texto_footer {
+  color: var(--secund-color)
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container__logo {
+  text-align: center;
+}
+
+.logo {
+  max-width: 100%;
+}
+
+
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+
+.section_presentacion {
+
+  padding: 2rem;
+  text-align: center;
+}
+
+.container_card_presentacion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card_presentacion {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.card_texto {
+  text-align: center;
+}
+
+.image_card {
+  max-width: 100%;
+  height: auto;
+}
+
+.view_page {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #5e78a6;
+  font-weight: bold;
+}
+
+
+.section__formulario {
+  padding: 2rem;
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.input_form {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+.boton__form {
+
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+
+footer {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.texto_footer {
+  text-align: center;
+}
+
+.texto_footer_right {
+  flex: 1;
+}
+
+.texto_footer_left {
+  flex: 1;
+}

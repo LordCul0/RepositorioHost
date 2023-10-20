@@ -1,0 +1,79 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+flex-direction: column;
+
+}
+
+.h1{
+   background-color: #97C1C8;
+    height: 10%;
+   width: 80%;
+    margin-bottom: 5%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.img{
+    background-color: #97C1C8;
+    padding: 5%;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    height: 80%;
+    width: 80%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.cuerpo{
+    background-color: #97C1C8;
+ padding: 5%;
+
+    height: 80%;
+   width: 80%;
+   justify-content: center;
+   display: flex;
+   align-items: center;
+   
+}
+
+
+
+
+.footer{
+  
+  animation:shake-left-right 5s linear both} @keyframes shake-left-right{0%,100%{transform:rotate(0deg);transform-origin:50% 50%}10%{transform:rotate(8deg)}20%,40%,60%{transform:rotate(-10deg)}30%,50%,70%{transform:rotate(10deg)}80%{transform:rotate(-8deg)}90%{transform:rotate(8deg)}}
+
+
+.footer{
+    border-radius: 12px;
+    margin: 5%;
+    padding: 1%;
+    background-color: #97C1C8;
+    height: 10%;
+    width: 80%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.buton{
+    background-color: #97C1C8;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+   padding: 1%;
+    width: 88%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width:550px) {
+    .cuerpo {   justify-content: center;
+        display: flex;
+        align-items: center;
+    flex-direction: column; }
+}
